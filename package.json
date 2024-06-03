@@ -1,0 +1,21 @@
+{
+	"name": "zoom",
+	"version": "1.0.0",
+	"license": "MIT",
+	"description": "Zoom coding use WebRTC and Websockets",
+	"scripts": {
+		"dev": "nodemon"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.24.6",
+		"@babel/core": "^7.24.6",
+		"@babel/node": "^7.24.6",
+		"@babel/preset-env": "^7.24.6",
+		"nodemon": "^3.1.2"
+	},
+	"dependencies": {
+		"express": "^4.19.2",
+		"pug": "^3.0.3",
+		"ws": "^8.17.0"
+	}
+}
