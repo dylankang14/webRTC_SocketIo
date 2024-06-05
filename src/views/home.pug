@@ -9,26 +9,17 @@ html(lang="en")
     header
       h1 Noom
     main 
-      #name
-        h4 Enter your name first~!
-        form
-          input(type="text", placeholder="nickname.", required)  
-          button Save
-
       #welcome 
-        form
-          input(type="text", placeholder="Type room name.", required)  
+        form 
+          input(type="text", required, placeholder="room name here.")
           button Enter room
-
-      #room 
-        h3
-        ul 
-        form
-          input(type="text", placeholder="message here.", required)  
-          button Send
-
-      #room_list 
-        ul
+      #call
+        #myStream 
+          video#myFace(autoplay, playsinline, width="400", height="400")
+          button#mute Mute
+          button#cameraOff Camera Off
+          select#cameras
+          video#peerFace(autoplay, playsinline, width="400", height="400")
 
     script(src="/socket.io/socket.io.js")
     script(src="/public/js/app.js")
